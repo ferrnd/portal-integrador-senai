@@ -1,0 +1,29 @@
+.secao {
+  position: relative;
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 64px 16px 80px;
+  scroll-margin-top: 40px;
+}
+
+.cabecalho {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cabecalho h2 {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.cabecalho p {
+  margin-top: 6px;
+  color: var(--texto-suave);
+}
+
+.grade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
