@@ -1,0 +1,79 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 340px;
+  padding: 28px;
+  border: 1px solid var(--borda);
+  border-top: 6px solid var(--cor);
+  border-radius: 8px;
+  background: var(--branco);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--cor);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card:focus-visible {
+  outline: 3px solid var(--cor);
+  outline-offset: 3px;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icone {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--cor) 12%, white);
+  color: var(--cor);
+}
+
+.grupo {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.materia {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--cor);
+}
+
+.descricao {
+  flex: 1;
+  margin-top: 8px;
+  line-height: 1.55;
+  color: var(--texto-suave);
+}
+
+.acessar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--senai);
+}
+
+.acessar svg {
+  transition: transform 0.2s;
+}
+
+.card:hover .acessar svg {
+  transform: translateX(4px);
+}
