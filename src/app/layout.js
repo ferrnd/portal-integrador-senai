@@ -7,7 +7,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Portal Educacional SESI/SENAI",
+  title: "Portal Integrador | SENAI",
   description: "Lobby que reúne os portais de matérias do Ensino Médio.",
 };
 
