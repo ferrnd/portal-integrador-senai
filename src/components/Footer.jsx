@@ -25,7 +25,9 @@ export default function Footer() {
           <ul>
             {portais.map((portal) => (
               <li key={portal.grupo}>
-                <a href={portal.href}>{portal.materia}</a>
+                <a href={portal.href} target="_blank" rel="noopener noreferrer">
+                  {portal.materia}
+                </a>
               </li>
             ))}
           </ul>
