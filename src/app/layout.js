@@ -8,7 +8,11 @@ const inter = Inter({
 
 export const metadata = {
   title: "Portal Integrador | SENAI",
-  description: "Lobby que reúne os portais de matérias do Ensino Médio.",
+  description:
+    "Página inicial do Projeto Integrador Final do SENAI Valinhos. Acesse os portais de Geografia, Biologia, História, Português e Filosofia.",
+  openGraph: {
+    siteName: "Projeto Integrador · SENAI Valinhos",
+  },
 };
 
 export default function RootLayout({ children }) {
