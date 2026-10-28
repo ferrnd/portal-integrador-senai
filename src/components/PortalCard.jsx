@@ -3,7 +3,13 @@ import styles from "./PortalCard.module.css";
 
 export default function PortalCard({ grupo, materia, descricao, Icon, cor, href }) {
   return (
-    <a href={href} className={styles.card} style={{ "--cor": cor }}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.card}
+      style={{ "--cor": cor }}
+    >
       <div className={styles.topo}>
         <span className={styles.icone}>
           <Icon size={28} />
