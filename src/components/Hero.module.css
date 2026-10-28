@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(160deg, var(--senai) 0%, var(--senai-escuro) 100%);
+  background: linear-gradient(to top, var(--senai-escuro) 0%, var(--senai) 100%);
   color: var(--branco);
   padding: 64px 16px 72px;
   text-align: center;
