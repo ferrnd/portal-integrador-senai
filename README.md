@@ -4,6 +4,8 @@ Página inicial (lobby) que reúne e dá acesso aos cinco portais educacionais d
 
 **Site publicado:** https://portal-integrador-senai.vercel.app
 
+![Página inicial do Portal Integrador no computador](docs/desktop.png)
+
 ## Sobre o projeto
 
 Cada equipe da turma desenvolveu um portal completo sobre uma disciplina do Ensino Médio. O Portal Integrador é a porta de entrada desses portais: apresenta o projeto e direciona o visitante para a disciplina escolhida.
@@ -28,6 +30,14 @@ Conforme o enunciado da atividade, o Portal Integrador **não utiliza** banco de
 - Seção "Sobre o projeto" com o que cada portal oferece.
 - Layout responsivo para computadores, tablets e celulares.
 - Favicon e imagem de prévia para compartilhamento do link (Open Graph).
+
+### Versão para celular
+
+<img src="docs/mobile.png" alt="Página inicial do Portal Integrador no celular" width="300" />
+
+### Prévia do link ao compartilhar
+
+![Imagem de prévia exibida ao compartilhar o link](src/app/opengraph-image.png)
 
 ## Tecnologias
 
@@ -118,6 +128,7 @@ src/
     └── portais.js             # Dados dos portais e dos recursos
 public/
 └── senai-logo.webp            # Logo do SENAI
+docs/                          # Capturas de tela usadas neste README
 ```
 
 ## Publicação
