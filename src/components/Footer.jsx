@@ -46,7 +46,16 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className={styles.rodape}>© 2026 SESI/SENAI · Projeto educacional</div>
+      <div className={styles.rodape}>
+        © 2026 SESI/SENAI · Projeto educacional · Desenvolvido pelo{" "}
+        <a
+          href="https://github.com/ferrnd/portal-integrador-senai"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Grupo 4
+        </a>
+      </div>
     </footer>
   );
 }
