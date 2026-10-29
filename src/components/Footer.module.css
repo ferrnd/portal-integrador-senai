@@ -55,6 +55,17 @@
   color: #71717a;
 }
 
+.rodape a {
+  color: #d4d4d8;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.rodape a:hover {
+  color: var(--branco);
+}
+
 @media (max-width: 700px) {
   .conteudo {
     grid-template-columns: 1fr 1fr;
