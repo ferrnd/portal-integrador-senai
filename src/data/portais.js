@@ -1,20 +1,10 @@
-import {
-  BookOpen,
-  Briefcase,
-  ClipboardCheck,
-  Dna,
-  Globe,
-  Landmark,
-  Lightbulb,
-  MonitorPlay,
-  Newspaper,
-} from "lucide-react";
+import { BookOpen, Dna, Globe, Landmark, Lightbulb } from "lucide-react";
 
 export const portais = [
   {
     grupo: 1,
     materia: "Geografia",
-    descricao: "Mapas, clima, territórios e o mundo em transformação.",
+    descricao: "Mapas, clima, população e as transformações do território.",
     Icon: Globe,
     cor: "#16a34a",
     href: "#",
@@ -22,7 +12,7 @@ export const portais = [
   {
     grupo: 2,
     materia: "Biologia",
-    descricao: "Vida, corpo humano, ecologia e genética.",
+    descricao: "Células, corpo humano, ecologia e genética.",
     Icon: Dna,
     cor: "#65a30d",
     href: "#",
@@ -30,7 +20,7 @@ export const portais = [
   {
     grupo: 3,
     materia: "História",
-    descricao: "Do passado ao presente: fatos, povos e revoluções.",
+    descricao: "Brasil e mundo, das civilizações antigas até hoje.",
     Icon: Landmark,
     cor: "#b45309",
     href: "#",
@@ -38,7 +28,7 @@ export const portais = [
   {
     grupo: 4,
     materia: "Português",
-    descricao: "Gramática, literatura, interpretação e redação.",
+    descricao: "Gramática, literatura, interpretação de texto e redação.",
     Icon: BookOpen,
     cor: "#2563eb",
     href: "#",
@@ -46,7 +36,7 @@ export const portais = [
   {
     grupo: 5,
     materia: "Filosofia",
-    descricao: "Pensadores, ética, lógica e grandes perguntas.",
+    descricao: "Os principais pensadores, ética e lógica.",
     Icon: Lightbulb,
     cor: "#7c3aed",
     href: "#",
@@ -54,24 +44,8 @@ export const portais = [
 ];
 
 export const recursos = [
-  {
-    titulo: "Notícias",
-    texto: "Novidades de cada disciplina, atualizadas pelas equipes.",
-    Icon: Newspaper,
-  },
-  {
-    titulo: "Simulados",
-    texto: "Questões com correção automática e resultado na hora.",
-    Icon: ClipboardCheck,
-  },
-  {
-    titulo: "Carreiras e estágios",
-    texto: "Profissões ligadas a cada matéria e aos cursos do SENAI Valinhos.",
-    Icon: Briefcase,
-  },
-  {
-    titulo: "Dicas e vídeos",
-    texto: "Orientações de estudo e vídeos educativos para o vestibular.",
-    Icon: MonitorPlay,
-  },
+  "notícias sobre a disciplina",
+  "simulado com correção e resultado",
+  "informações sobre carreiras e estágios ligados aos cursos do SENAI Valinhos",
+  "dicas de estudo e vídeos educativos",
 ];
