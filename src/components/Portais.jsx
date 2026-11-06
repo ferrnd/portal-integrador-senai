@@ -6,8 +6,8 @@ export default function Portais() {
   return (
     <section id="portais" className={styles.secao}>
       <div className={styles.cabecalho}>
-        <h2>Escolha sua disciplina</h2>
-        <p>Cada portal foi desenvolvido por uma equipe da turma.</p>
+        <h2>Escolha uma disciplina</h2>
+        <p>Cada portal é aberto em uma nova aba, para que você possa voltar a esta página.</p>
       </div>
 
       <div className={styles.grade}>
