@@ -31,7 +31,7 @@ body {
     var(--textura) 60px 60px,
     var(--fundo);
   color: var(--texto);
-  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  font-family: var(--font-principal), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
