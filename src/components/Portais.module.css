@@ -2,12 +2,12 @@
   position: relative;
   max-width: var(--largura);
   margin: 0 auto;
-  padding: 64px 16px 80px;
+  padding: 56px 16px 72px;
   scroll-margin-top: 40px;
 }
 
 .cabecalho {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -25,5 +25,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .grade {
+    gap: 12px;
+  }
 }
