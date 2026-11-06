@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import styles from "./PortalCard.module.css";
 
 export default function PortalCard({ grupo, materia, descricao, Icon, cor, href }) {
@@ -11,19 +10,15 @@ export default function PortalCard({ grupo, materia, descricao, Icon, cor, href 
       style={{ "--cor": cor }}
     >
       <div className={styles.topo}>
-        <span className={styles.icone}>
-          <Icon size={28} />
-        </span>
+        <Icon size={150} strokeWidth={1.5} className={styles.fundoIcone} aria-hidden="true" />
         <span className={styles.grupo}>Grupo {grupo}</span>
+        <h3 className={styles.materia}>{materia}</h3>
       </div>
 
-      <h3 className={styles.materia}>{materia}</h3>
-      <p className={styles.descricao}>{descricao}</p>
-
-      <span className={styles.acessar}>
-        Acessar portal
-        <ArrowRight size={18} />
-      </span>
+      <div className={styles.corpo}>
+        <p className={styles.descricao}>{descricao}</p>
+        <span className={styles.acessar}>Acessar portal</span>
+      </div>
     </a>
   );
 }
