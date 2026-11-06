@@ -16,7 +16,7 @@ export default function Footer() {
           />
           <p>
             Projeto Integrador Final do curso Técnico em Desenvolvimento de
-            Sistemas — SENAI Valinhos.
+            Sistemas do SENAI Valinhos.
           </p>
         </div>
 
