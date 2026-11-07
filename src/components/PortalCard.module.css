@@ -7,7 +7,7 @@
   border: 1px solid var(--borda);
   border-radius: 6px;
   background: var(--branco);
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -28,15 +28,20 @@
   justify-content: flex-end;
   overflow: hidden;
   padding: 20px 24px 18px;
-  background: var(--cor);
+  background-color: var(--cor);
+  background-image:
+    linear-gradient(
+      color-mix(in srgb, var(--cor) 82%, transparent),
+      color-mix(in srgb, var(--cor) 82%, transparent)
+    ),
+    var(--foto);
+  background-size: cover;
+  background-position: center;
   color: var(--branco);
 }
 
-.fundoIcone {
-  position: absolute;
-  top: -22px;
-  right: -22px;
-  opacity: 0.22;
+.icone {
+  flex-shrink: 0;
 }
 
 .grupo {
@@ -48,6 +53,9 @@
 
 .materia {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 32px;
   font-weight: 800;
   font-style: italic;
@@ -70,12 +78,18 @@
 }
 
 .acessar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 15px;
   font-weight: 700;
   color: var(--cor);
 }
 
 .card:hover .acessar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
