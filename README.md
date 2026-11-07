@@ -25,9 +25,9 @@ Conforme o enunciado da atividade, o Portal Integrador **não utiliza** banco de
 ## Funcionalidades
 
 - Página inicial com a identidade visual do SESI/SENAI.
-- Cards de acesso aos cinco portais, cada um com a cor e o ícone da disciplina.
+- Cards de acesso aos cinco portais, cada um com a cor, o ícone e uma foto da disciplina.
 - Os portais abrem em uma nova aba, mantendo o lobby aberto.
-- Seção "Sobre o projeto" com o que cada portal oferece.
+- Seção com o que todos os portais oferecem e seção "Sobre o projeto".
 - Layout responsivo para computadores, tablets e celulares.
 - Favicon e imagem de prévia para compartilhamento do link (Open Graph).
 
@@ -47,6 +47,7 @@ Conforme o enunciado da atividade, o Portal Integrador **não utiliza** banco de
 | React 19       | Componentes da interface                 |
 | JavaScript     | Linguagem (sem TypeScript)               |
 | CSS Modules    | Estilização por componente               |
+| Barlow         | Fonte (Google Fonts, via `next/font`)    |
 | lucide-react   | Ícones                                   |
 | ESLint         | Padronização do código                   |
 | Git e GitHub   | Versionamento                            |
@@ -99,9 +100,10 @@ Os links dos portais ficam em `src/data/portais.js`. Para atualizar o endereço 
 {
   grupo: 4,
   materia: "Português",
-  descricao: "Gramática, literatura, interpretação e redação.",
+  descricao: "Gramática, literatura, interpretação de texto e redação.",
   Icon: BookOpen,
   cor: "#2563eb",
+  foto: "/fotos/portugues.webp",
   href: "https://endereco-do-portal.vercel.app",
 },
 ```
@@ -121,12 +123,15 @@ src/
 │   ├── Hero.jsx               # Seção principal
 │   ├── Portais.jsx            # Grade com os cinco portais
 │   ├── PortalCard.jsx         # Card de acesso a um portal
-│   ├── Sobre.jsx              # Seção sobre o projeto
+│   ├── Sobre.jsx              # Recursos dos portais e seção sobre o projeto
 │   └── Footer.jsx             # Rodapé
 │   (cada componente tem seu próprio arquivo .module.css)
 └── data/
     └── portais.js             # Dados dos portais e dos recursos
 public/
+├── fotos/                     # Fotos dos cards (uma por disciplina)
+├── marca-integrador.png       # Marca listrada usada no cabeçalho
+├── mosaico-disciplinas.webp   # Imagem das disciplinas na seção Sobre
 └── senai-logo.webp            # Logo do SENAI
 docs/                          # Capturas de tela usadas neste README
 ```
@@ -134,6 +139,10 @@ docs/                          # Capturas de tela usadas neste README
 ## Publicação
 
 O projeto está conectado à Vercel. Cada `push` na branch `main` gera uma nova publicação automaticamente.
+
+## Imagens
+
+As fotos dos cards são do [Unsplash](https://unsplash.com) e do [Pexels](https://www.pexels.com), de uso livre e sem exigência de crédito. Elas foram convertidas para preto e branco e recebem a cor de cada disciplina por cima. Nenhuma imagem mostra pessoas.
 
 ## Privacidade
 
