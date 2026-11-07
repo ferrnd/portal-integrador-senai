@@ -7,6 +7,7 @@ export const portais = [
     descricao: "Mapas, clima, população e as transformações do território.",
     Icon: Globe,
     cor: "#16a34a",
+    foto: "/fotos/geografia.webp",
     href: "#",
   },
   {
@@ -15,6 +16,7 @@ export const portais = [
     descricao: "Células, corpo humano, ecologia e genética.",
     Icon: Dna,
     cor: "#65a30d",
+    foto: "/fotos/biologia.webp",
     href: "#",
   },
   {
@@ -23,6 +25,7 @@ export const portais = [
     descricao: "Brasil e mundo, das civilizações antigas até hoje.",
     Icon: Landmark,
     cor: "#b45309",
+    foto: "/fotos/historia.webp",
     href: "#",
   },
   {
@@ -31,6 +34,7 @@ export const portais = [
     descricao: "Gramática, literatura, interpretação de texto e redação.",
     Icon: BookOpen,
     cor: "#2563eb",
+    foto: "/fotos/portugues.webp",
     href: "#",
   },
   {
@@ -39,13 +43,7 @@ export const portais = [
     descricao: "Os principais pensadores, ética e lógica.",
     Icon: Lightbulb,
     cor: "#7c3aed",
+    foto: "/fotos/filosofia.webp",
     href: "#",
   },
-];
-
-export const recursos = [
-  "notícias sobre a disciplina",
-  "simulado com correção e resultado",
-  "informações sobre carreiras e estágios ligados aos cursos do SENAI Valinhos",
-  "dicas de estudo e vídeos educativos",
 ];
